@@ -1,6 +1,7 @@
 package com.example.indianic.retrofitwithrxjava;
 
 import io.reactivex.Observable;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 
@@ -58,10 +59,16 @@ public interface ServiceInterface {
 //            @Query(DEVICE_ID) String deviceId,
 //            @Query(DEVICE_TYPE) String deviceType,
 //            @Query(NM_DEBUG) String nmDebug);
-//
-//
-//
-//
+
+
+//    // Post Method with Body
+//    //Reference Link : https://stackoverflow.com/a/21423093
+//    @Headers({HEADER_CONTENT_TYPE_APP_JSON, HEADER_REQ_FORMAT_JSON})
+//    @POST(GENERATE_KEY)
+//    Observable<GenerateKeyModel> generateKey(
+//            @Body UserModel body);
+
+
 //    // Multipart for upload image and video
 //    @Multipart
 //    @POST(CREATE_ORGANIZATION_GROUP_FRONT)
